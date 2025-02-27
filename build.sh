@@ -24,13 +24,11 @@ cmake \
   -DCMAKE_C_COMPILER=gcc \
   -DCMAKE_BUILD_TYPE=Release \
   -G "Unix Makefiles" \
-  -DCMAKE_C_FLAGS=-m64 \
-  -DCMAKE_CXX_FLAGS=-m64 \
+  -DCMAKE_C_FLAGS=-m32 \
+  -DCMAKE_CXX_FLAGS=-m32 \
   -S $WORKSPACE \
   -B $OUTPUT_DIR
 echo
-
-#-DCMAKE_EXE_LINKER_FLAGS="-m elf_x86_64" \
 
 echo '### Building...'
 cmake --build $OUTPUT_DIR

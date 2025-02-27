@@ -8,6 +8,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get upgrade -y
-    apt-get install -y build-essential cmake gcc-multilib libc6-i386 libc6-dev-i386
+    apt-get install -y build-essential cmake gcc-multilib g++-multilib
   SHELL
 end
