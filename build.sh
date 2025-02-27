@@ -14,8 +14,13 @@ echo
 
 echo '### Checking out project source...'
 mkdir -p $WORKSPACE
-cp -r /vagrant/* $WORKSPACE
+cp /vagrant/CMakeLists.txt $WORKSPACE
+cp /vagrant/hello.cpp $WORKSPACE
+echo
+
+echo '### Listing workspace files...'
 cd $WORKSPACE
+ls -l
 echo
 
 echo '### Generating build files...'
