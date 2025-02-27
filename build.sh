@@ -31,6 +31,8 @@ cmake \
   -G "Unix Makefiles" \
   -DCMAKE_C_FLAGS=-m32 \
   -DCMAKE_CXX_FLAGS=-m32 \
+  -DCMAKE_C_FLAGS_RELEASE=-s \
+  -DCMAKE_CXX_FLAGS_RELEASE=-s \
   -S $WORKSPACE \
   -B $OUTPUT_DIR
 echo
